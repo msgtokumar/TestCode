@@ -21,3 +21,11 @@ clean:
 	@echo    "Clean starts."
 	mvn  clean
 
+dockerbuild:
+	@echo    "Clean starts."
+	#sudo docker build -t msgtokumar/testcode .
+	#sudo docker login -u msgtokumar -p changeme123
+
+dockerpush:
+	@echo    "Clean starts."
+	#sudo docker push msgtokumar/testcode
