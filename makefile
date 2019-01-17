@@ -5,8 +5,8 @@ OS := $(shell uname)
 build:
 	##./scripts/my-important-task.sh my-parameter
 	@echo    build..started
-	##mvn    clean    verify   compile
-	mvn clean deploy -U -Dmaven.test.skip=true
+	mvn    clean    verify   compile
+	
 package:
 	##./scripts/my-important-task.sh my-parameter
 	@echo    Package${GIT_REPO}
@@ -21,11 +21,3 @@ clean:
 	@echo    "Clean starts."
 	mvn  clean
 
-dockerbuild:
-	@echo    "Clean starts."
-	#sudo docker build -t msgtokumar/testcode .
-	#sudo docker login -u msgtokumar -p changeme123
-
-dockerpush:
-	@echo    "Clean starts."
-	#sudo docker push msgtokumar/testcode
