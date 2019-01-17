@@ -3,12 +3,12 @@ DIR := "dev1"
 OS := $(shell uname)
 
 build:
-	#./scripts/my-important-task.sh my-parameter
+	##./scripts/my-important-task.sh my-parameter
 	@echo    build..started
-	mvn    clean    verify   compile
-
+	##mvn    clean    verify   compile
+	mvn clean deploy -U -Dmaven.test.skip=true
 package:
-	#./scripts/my-important-task.sh my-parameter
+	##./scripts/my-important-task.sh my-parameter
 	@echo    Package${GIT_REPO}
 	mvn  package
 
