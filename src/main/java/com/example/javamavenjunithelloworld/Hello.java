@@ -1,4 +1,4 @@
-package com.example.javamavenjunithelloworld;
+﻿package com.example.javamavenjunithelloworld;
 
 import java.io.PrintStream;
 
@@ -11,7 +11,7 @@ public class Hello {
 
     public static final int MAXIMUM_AMOUNT_OF_TIMES = 20;
 
-    private int times = 1;
+    private int times = 3;
 
     /**
      * Set how many times "Hello!" should be said.
